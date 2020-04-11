@@ -1,0 +1,4 @@
+SpeechRecognition==3.8.1
+gTTS==2.1.1
+pipwin==0.4.9
+# pipwin install pyaudio
