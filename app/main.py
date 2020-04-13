@@ -25,23 +25,34 @@ def M4():
     quit()
 
 
+def M5():
+    print('\nMSG5: Sorry you’re feeling sick. Call medical provider within 24 hours')
+    quit()
+
+
+def M6():
+    print('\nMSG6: Contact the occupational health provider at your workplace  immediately.')
+    quit()
+
+
 def M7():
     print('MSG7: Contact a healthcare provider  in the long-term care facility where you live\n')
     quit()
 
 
 def M8():
-    print('\n')
+    print('\nMSG8: Stay at home and take care of yourself. Call your provider if you get worse.\n')
     quit()
 
 
 def M9():
-    print('\n')
+    print('\nMSG9: Stay home and take care of yourself in home isolation.\n')
     quit()
 
 
 def M10():
-    print('\n')
+    print('\nMSG10: Sorry you’re feeling ill. Stay at home and monitor your symptoms. Call your provider if you get worse.\n')
+    print('* Non-COVID *')
     quit()
 
 
@@ -136,55 +147,92 @@ def Q11():
 
 
 def Q12():
-    print('')
+    print('Q12: In the last two weeks have you (they) worked or volunteered in a hospital, emergency room, clinic, medical office, long-term care facility or nursing home ambulance service, first responder services, or any health care setting or taken care of patients as a student or part of your work?')
+    return input('[y\\n]: ')
 
 
 def Q13():
-    print('')
+    print('Q13: Do you have any of the following conditions')
+    print('    - Chronic lung disease, moderate to severe asthma, or smoking')
+    print('    - Serious heart conditions')
+    print('    - Weakened immune system(cancer treatment, prolonged use of steroids, transplant or HIV/AIDS)')
+    print('    - Pregnancy')
+    print('    - Underlying conditions(diabetes, renal failure, or liver disease)')
+    # print('    - None of the above')
+    return input('[y\\n]: ')
 
 
 def Q14():
-    print('')
+    print('Q14: Do you(they) have any of the following?')
+    print('    - Fever or feeling feverish(chills, sweating)')
+    print('    - Shortness of breath(not severe)')
+    print('    - Cough')
+    print('    - Other')
+    return input('[y\\n]: ')
 
 
 def Q15():
-    print('')
+    print('Q15: Do you(they) have any of the following?')
+    print('    - Runny or stuffy nose')
+    print('    - Sore throat')
+    print('    - Muscle aches, body aches, or headache')
+    print('    - Tiredness or fatigue')
+    print('    - Nausea, vomiting, or diarrhea')
+    print('    - Other')
+    return input('[y\\n]: ')
 
 
 def Q16():
-    print('')
+    print('Q16: Do you(they) live in a long-term care facility or nursing home?')
+    return input('[y\\n]: ')
 
 
 def Q17():
-    print('')
+    print('Q17: In the last two weeks have you(sick person) worked or volunteered in a hospital, emergency room, clinic, medical office, long-term care facility or nursing home, ambulance service, first responder services, or any health care setting or taken care of patients as a student or part of your work?')
+    return input('[y\\n]: ')
 
 
 def Q18():
-    print('')
+    print('Q18: Do you have any of the following conditions?')
+    print('    - Chronic lung disease, moderate to severe asthma, or smoking')
+    print('    - Serious heart conditions')
+    print('    - Weakened immune system(cancer treatment, prolonged use of steroids, transplant or HIV/AIDS)')
+    return input('[y\\n]: ')
 
 
 def Q19():
-    print('')
+    print('Q19: Do you(they) live in a long-term care facility or nursing home')
+    return input('[y\\n]: ')
 
 
 def Q20():
-    print('')
+    print('Q20: In the last two weeks have you(sick person) worked or volunteered in a hospital, emergency room, clinic, medical office, long-term care facility or nursing home, ambulance service, first responder services, or any health care setting or take care of patients as a student or part of your work?')
+    return input('[y\\n]: ')
 
 
 def Q21():
-    print('')
+    print('Q21: Do you have any of the following conditions?')
+    print('    - Chronic lung disease, moderate to severe asthma, or smoking')
+    print('    - Serious heart conditions')
+    print('    - Weakened immune system (cancer treatment, prolonged use of steroids, transplant or HIV/AIDS)')
+    print('    - Pregnancy')
+    print('    - Severe obesity(Body Mass Index[BMI] ≥ 40)')
+    print('    - Underlying conditions(diabetes, renal failure, or liver disease)')
+    return input('[y\\n]: ')
 
 
 def Q22():
-    print('')
+    print('Q22: In the last two weeks have you(sick person) worked or volunteered in a hospital, emergency room, clinic, medical office, long - term care facility or nursing home, ambulance service, first responder services, or any health care setting or taken care of patients as a student or part of your work')
+    return input('[y\\n]: ')
 
 
 def Q23():
-    print('')
+    print('Q23: In the last two weeks have you(sick person) worked or volunteered in a hospital, emergency room, clinic, medical office, long-term care facility or nursing home, ambulance service, first responder services, or any health care setting or taken care of patients as a student or part of your work')
+    return input('[y\\n]: ')
 
 
-def Q24():
-    print('')
+# def Q24():
+#    print('noop')
 
 
 def Q25():
@@ -193,11 +241,19 @@ def Q25():
 
 
 def Q26():
-    print('')
+    print('Q26: In the last two weeks have you(sick person) worked or volunteered in a hospital, emergency room, clinic, medical office, long-term care facility or nursing home, ambulance service, first responder services, or any health care setting or taken care of patients as a student or part of your work?')
+    return input('[y\\n]: ')
 
 
 def Q27():
-    print('')
+    print('Q27: Do you have any of the following conditions?')
+    print('    - Chronic lung disease, moderate to severe asthma, or smoking')
+    print('    - Serious heart conditions')
+    print('    - Weakened immune system(cancer treatment, prolonged use of steroids, transplant or HIV/AIDS)')
+    print('    - Pregnancy')
+    print('    - Severe obesity(Body Mass Index[BMI] ≥ 40)')
+    print('    - Underlying conditions(diabetes, renal failure, or liver disease)')
+    return input('[y\\n]: ')
 
 
 def Q28():
@@ -206,7 +262,14 @@ def Q28():
 
 
 def Q29():
-    print('')
+    print('Do you have any of the following conditions?')
+    print('    - Chronic lung disease, moderate to severe asthma, or smoking')
+    print('    - Serious heart conditions')
+    print('    - Weakened immune system(cancer treatment, prolonged use of steroids, transplant or HIV/AIDS)')
+    print('    - Pregnancy')
+    print('    - Severe obesity(Body Mass Index[BMI] ≥ 40)')
+    print('    - Underlying conditions(diabetes, renal failure, or liver disease)')
+    return input('[y\\n]: ')
 
 
 def phase1():
@@ -327,7 +390,7 @@ def phase2():
                 else:
                     a29 = Q29()
                     a20 = Q20()
-                    if a29 == '0':
+                    if a29 == 'n':
                         if a20 == 'n':
                             M9()
                         else:
