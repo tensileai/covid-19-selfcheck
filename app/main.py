@@ -68,7 +68,7 @@ def Q2():
 
 def Q3():
     print('Q3: What is your (their) age?\n')
-    return input('[y\\n]: ')
+    return input('[age in years]: ')
 
 
 def Q4():
