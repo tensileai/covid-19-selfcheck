@@ -73,7 +73,6 @@ def Q3():
 
 def Q4():
     print('Q4: Are they experiencing any of the following life-threatening  symptoms?')
-    print('   - Not experiencing any life-threatening symptoms')
     print('   - Extremely fast or shallow breathing')
     print('   - Blue-colored lips or face')
     print('   - Not waking up or not interacting when awake')
@@ -83,8 +82,7 @@ def Q4():
 
 
 def Q5():
-    print('Q5: Are you (they) experiencing any of the following life-threatening  symptoms?')
-    print('   - Not experiencing any life-threatening symptoms')
+    print('Q5: Are you (they) experiencing any of the following life-threatening symptoms?')
     print('   - Gasping for air or cannot talk without catching your breath (extremely difficult breathing)')
     print('   - Blue-colored lips or face')
     print('   - Severe and constant pain or pressure in the chest')
@@ -103,7 +101,6 @@ def Q6():
     print('   - Signs of low blood pressure (feeling cold, pale, clammy skin, light-headed, too weak to stand)')
     print('   - Ribs are pulling in with each breath (retractions)')
     print('   - Dehydration')
-    print('   - None of the above')
     return input('[y\\n]: ')
 
 
@@ -112,7 +109,6 @@ def Q7():
     print('   - Moderate to severe difficulty breathing (unable to speak full sentences)')
     print('   - Coughing up blood (more than about 1 teaspoon)')
     print('   - Signs of low blood pressure (feeling cold, pale, clammy skin, light-headed, too weak to stand)')
-    print('   - None of the above')
     return input('[y\\n]: ')
 
 
@@ -152,13 +148,12 @@ def Q12():
 
 
 def Q13():
-    print('Q13: Do you have any of the following conditions')
+    print('Q13: Do you have any of the following conditions?')
     print('    - Chronic lung disease, moderate to severe asthma, or smoking')
     print('    - Serious heart conditions')
     print('    - Weakened immune system(cancer treatment, prolonged use of steroids, transplant or HIV/AIDS)')
     print('    - Pregnancy')
     print('    - Underlying conditions(diabetes, renal failure, or liver disease)')
-    # print('    - None of the above')
     return input('[y\\n]: ')
 
 
