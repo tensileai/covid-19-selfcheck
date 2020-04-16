@@ -10,6 +10,10 @@ The main code is a dialog of questions and answers leading to guidance if an ind
 
 ## Integration with Speech Recognition, Speech to Text, and Voice activated responses
 
+The file main.py is a basic template for a command line interface (CLI) and can be run with Python 3.
+
+An interactive version is also provided using Google Speech Recognition and Text To Speech.  To install these pacckages, run these steps:
+
 ```python
 pip install SpeechRecognition
 pip install gTTS
