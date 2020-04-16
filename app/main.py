@@ -1,6 +1,3 @@
-
-# from Decision import Decision
-
 # Setup
 yes_no = ['y', 'n']
 
