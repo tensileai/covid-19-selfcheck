@@ -17,7 +17,7 @@ An interactive version is also provided using Google Speech Recognition and Text
 ```python
 pip install SpeechRecognition
 pip install gTTS
-pin install pipwin
+pip install pipwin
 pipwin install pyaudio
 ```
 
