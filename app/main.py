@@ -22,9 +22,12 @@ def M4():
     quit()
 
 
-def M5():
-    print('\nMSG5: Sorry you’re feeling sick. Call medical provider within 24 hours.\n')
-    quit()
+def M5(quitAfter=True):
+    print('\nMSG5: Sorry you’re feeling sick. Call a medical provider within 24 hours.\n')
+    if (quitAfter):
+        quit()
+    else:
+        return
 
 
 def M6():
@@ -33,18 +36,24 @@ def M6():
 
 
 def M7():
-    print('MSG7: Contact a healthcare provider in the long-term care facility where you live.\n')
+    print('\nMSG7: Contact a healthcare provider in the long-term care facility where you live.\n')
     quit()
 
 
-def M8():
+def M8(quitAfter=True):
     print('\nMSG8: Stay at home and take care of yourself. Call your provider if you get worse.\n')
-    quit()
+    if (quitAfter):
+        quit()
+    else:
+        return
 
 
-def M9():
+def M9(quitAfter=True):
     print('\nMSG9: Stay home and take care of yourself in home isolation. Call a medical provider within 24 hours.\n')
-    quit()
+    if (quitAfter):
+        quit()
+    else:
+        return
 
 
 def M10():
@@ -150,7 +159,7 @@ def Q12():
 
 
 def Q13():
-    print('\nQ13: Do you have any of the following conditions')
+    print('\nQ13: Do you have any of the following conditions?')
     print('    - Chronic lung disease, moderate to severe asthma, or smoking')
     print('    - Serious heart conditions')
     print('    - Weakened immune system (cancer treatment, prolonged use of steroids, transplant or HIV/AIDS)')
@@ -312,14 +321,15 @@ def phase2(a3):
     a8 = Q8()
     if a8 == 'y':
         a9 = Q9()
-        if a9 == 1:
+        if a9 == '1':
             a11 = Q11()
             if a11 == 'y':
                 M7()
             elif (a11 == 'n' and int(a3) >= 19):
                 a12 = Q12()
                 if a12 == 'y':
-                    M9()
+                    M9(quitAfter=False)
+                    M6()
                 else:
                     a13 = Q13()
                     if a13 == 'y':
@@ -356,12 +366,13 @@ def phase2(a3):
                     Q18()
                     M8()
                 else:
-                    a17 = Q17
+                    a17 = Q17()
                     if a17 == 'n':
                         Q18()
                         M8()
                     else:
-                        M8()
+                        M8(quitAfter=False)
+                        M6()
             else:
                 M7()
         elif a14 == '2':
@@ -371,7 +382,7 @@ def phase2(a3):
             else:
                 if int(a3) < 65:
                     a21 = Q21()
-                    if a21 == '1':
+                    if a21 == 'y':
                         if int(a3) < 19:
                             M5()
                         else:
@@ -379,7 +390,7 @@ def phase2(a3):
                             if a22 == 'n':
                                 M5()
                             else:
-                                M5()
+                                M5(quitAfter=False)
                                 M6()
                     else:
                         if int(a3) < 19:
@@ -389,7 +400,7 @@ def phase2(a3):
                             if a23 == 'n':
                                 M8()
                             else:
-                                M8()
+                                M8(quitAfter=False)
                                 M6()
                 else:
                     a29 = Q29()
@@ -398,13 +409,13 @@ def phase2(a3):
                         if a20 == 'n':
                             M9()
                         else:
-                            M9()
+                            M9(quitAfter=False)
                             M6()
                     else:
                         if a20 == 'n':
                             M5()
                         else:
-                            M5()
+                            M5(quitAfter=False)
                             M6()
         elif a14 == '3':
             Q15()
