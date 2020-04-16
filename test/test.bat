@@ -1,0 +1,1 @@
+"C:/Program Files/Python37/python.exe" c:/Users/sasjv/dev/covid-19-selfcheck/app/main.py < MSG2.txt
